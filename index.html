@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riot Page</title>
+
+    <!-- icon -->
+    <link rel="icon" href="./img/logo_punch.png" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="atingnonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+
+
+
+
+    <!-- awesome -->
+    <script src="https://kit.fontawesome.com/1d1fdcfacc.js" crossorigin="anonymous"></script>
+
+    <!-- maincss -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- mainjs -->
+    <script src="main.js"></script>
+</head>
+
+
+<body>
+
+    <div class="background-sth text-white fs-6 fw-bold " style="height: 780px;">
+        <!-- Video background -->
+        <div class="video-container">
+            <video autoplay muted loop class="video-background">
+                <source src="./img/trophystraight-effect-full.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+
+        <div class="bg-header d-flex align-items-center">
+            <div class="container-fluid d-flex justify-content-between px-2 ">
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center me-4">
+                        <div class="col-md-1 me-3 my-2 mx-4 d-flex">
+                            <div class="img-hover d-flex justify-content-between px-4">
+                                <img src="./img/white.png" alt="White" style="width: 85px; height: auto"
+                                    onmouseover="this.src='./img/red.png';" onmouseout="this.src='./img/white.png';">
+                                <i class="fa-solid fa-caret-down ca-hover mt-1 px-1"></i>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-1 mx-5 my-2 ps-3">
+                            <a href="http://127.0.0.1:5500/index.html" style="text-decoration: none;">
+                                <img src="./img/logo_punch.png" alt="Logo" style="height: 45px; width: auto;">
+                            </a>
+                        </div>
+
+                        <div class="d-flex align-items-center ">
+                            <div class=" dropdown">
+                                <p class="px-3 mb-0 custom-head">WHO WE ARE <i
+                                        class="fa-solid fa-caret-down mx-1 custom-i"></i>
+                                </p>
+                                <div class="dropdown-content ">
+                                    <a href="https://www.riotgames.com/en/who-we-are" style="text-decoration:none;">
+                                        <p class="custom-text">About Riot</p>
+                                    </a>
+                                    <a href="https://www.riotgames.com/en/diversity-and-inclusion"
+                                        style="text-decoration:none;">
+                                        <p class="custom-text">Diversity <br>& Inclusion</p>
+                                    </a>
+                                    <a href="https://www.riotgames.com/en/who-we-are/social-impact"
+                                        style="text-decoration:none;">
+                                        <p class="custom-text">Social Impact</p>
+                                    </a>
+
+                                    
+
+                                </div>
+                            </div>
+
+                            <div class="dropdown">
+                                <p class="px-3 mb-0  custom-head ">WORK WITH US <i
+                                        class="fa-solid fa-caret-down mx-1 custom-i"></i>
+                                </p>
+                                <div class="dropdown-content ">
+                                    <a href="https://www.riotgames.com/en/work-with-us" style="text-decoration:none;">
+                                        <p class="custom-text">Jobs</p>
+                                    </a>
+                                    <a href="https://www.riotgames.com/en/work-with-us/salary-benefits"
+                                        style="text-decoration:none;">
+                                        <p class="custom-text">Benefits</p>
+                                    </a>
+                                    <a href="https://www.riotgames.com/en/work-with-us/offices"
+                                        style="text-decoration:none;">
+                                        <p class="custom-text">Offices</p>
+                                    </a>
+                                    <a href="https://www.riotgames.com/en/work-with-us/life-at-riot"
+                                        style="text-decoration:none;">
+                                        <p class="custom-text">Life At Riot</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-News">
+                                <a href="https://www.riotgames.com/en/news" style="text-decoration:none;" class="hihi">
+                                    <span class="px-3 mb-0 text-light custom-head">NEWS </span>
+                                </a>
+                            </div>
+                            <div class="see-my-teamate">
+                                <a href="https://hoangthien1101.github.io/profile-card/ " target = _blank style="text-decoration:none;" class="hihi">
+                                    <span class="px-3 mb-0 text-light custom-head">SEE MY TEAMATE</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center position-relative me-5">
+                    <i class="fa-solid fa-globe align-items-center d-flex m-0 pe-4"
+                        style="color:white; cursor: pointer;" id="globeIcon"></i>
+
+                    <div class="input-group me-3" style="width: 150px; height: fit-content;">
+                        <input type="text" class="form-control" placeholder="SEARCH" aria-label="Search"
+                            aria-describedby="search-addon">
+                        <span class="input-group-text text-dark" style="cursor: pointer;" id="search-addon">
+                            <i class="fa fa-search" style="cursor: pointer;"></i>
+                        </span>
+                    </div>
+
+                    <button class="d-flex bg-danger text-dark rounded-pill px-3 py-1 fw-bold fs-6"
+                        style="white-space: nowrap;">
+                        SIGN IN
+                    </button>
+
+                    <!-- Dropdown for languages -->
+                    <select class="form-select" id="languageSelect">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="it">Italiano</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                        <option value="pt">Português</option>
+                        <option value="ru">Русский</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="zh">中文</option>
+                        <option value="vi">Tiếng Việt</option>
+                        <option value="ar">العربية</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHAMPIONSHIP -->
+        <div class="content text-left pt-2 me-5" style="margin-left:-100px;">
+            <div class="container-inner justify-content-center align-content-center text-center">
+                <img src="./img/w24-logos-full-light-600px.png" style="width: 360px; height: 83px;" alt="">
+                <br>
+                <div class="fw-bold text-white fs-2 mt-5">League of Legends World <br>Championship</div>
+                <p class="fw-normal fs-5 mb-5" style="color: rgba(255, 255, 255, 0.697);">
+                    Tune in to Worlds starting 9/25, and don't miss the <br> Opening Ceremony and Finals on 11/2
+                </p>
+
+                <div class="content-a d-flex justify-content-center">
+                    <a href="https://lolesports.com/vi-VN/" target="_blank"
+                        class="button d-flex justify-content-center fs-2 align-items-center text-center justify-content-center text-light">
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-right fs-4"></i>
+                        </div>
+                        Watch Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- thien -->
+    <div class=" bg-wrapper bg-dark d-flex align-items-center justify-content-center " style="height: 860px">
+        <div class="wrapper align-items-center   container " style=" margin-bottom: 30px; max-width: 1700px;">
+            <div class="news-header">
+                <h2>Chuyện gì đang xảy ra vậy?</h2>
+
+                <a href="#" class="view-all-link">Xem tất cả</a>
+            </div>
+            <div class="news-container">
+                <!-- Left Section -->
+                <div class="main-news">
+                    <div class="boder-img" style="width: 800px;">
+                        <img src="https://www.riotgames.com/darkroom/1000/22483beb843d8c4b978b5404c5605d81:d806cc83b46a8fec9e35c8be20f29d85/w24-hypefilm-textless-thumb02.png"
+                            alt="CKTG 2024 Image" class="main-news-img">
+                    </div>
+
+                    <div class="news-title">
+                        <h3>CKTG 2024 | Để Niềm Tin Rực Cháy</h3>
+                        <div class="content-bottom d-flex">
+
+                            <div class="logo-content" style="margin-right: 10px;">
+                                <img src=" ./img/lol.png" style=" border-radius: 50%;height: 20px; width: 20px;" alt="">
+                            </div>
+                            <p>Liên Minh Huyền Thoại</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class=" sidebar">
+                    <div class="news-item">
+                        <div class="news-item-left">
+                            <p>Cập nhật Tháng 9/2024 | Chia Sẻ Từ ĐNPT - HDR</p>
+                            <div class="content-bottom d-flex" style="margin-left: 10px;">
+                                <div class="logo-content" style="margin-right: 10px;">
+                                    <img src=" ./img/lol.png" style=" border-radius: 50%;height: 20px; width: 20px;"
+                                        alt="">
+                                </div>
+                                <h5>Liên Minh Huyền Thoại</h5>
+                            </div>
+                        </div>
+                        <img src="https://www.riotgames.com/darkroom/500/8e9118afda0d7fe7bf0602fa14a096a7:e3e86e55f8cc4b897649d27d2bdb9271/lor-update5-9-devsnapshot-webredirect.png"
+                            alt="Update Image">
+                    </div>
+                    <div class="news-item">
+                        <div class="news-item-left">
+                            <p>Giới Thiệu CKTG 2024</p>
+                            <div class="content-bottom d-flex" style="margin-left: 10px;">
+
+                                <div class=" logo-content" style="margin-right: 10px;">
+                                    <img src=" ./img/lol.png" style="border-radius: 50%;height: 20px; width: 20px;"
+                                        alt="">
+                                </div>
+                                <h5>Liên Minh Huyền Thoại</h5>
+                            </div>
+                        </div>
+                        <img src="https://www.riotgames.com/darkroom/500/1538b165cac3473d6f7e5fb06c7741ba:50812a47c5ee0281840fe3c830d0cb81/w24-makethembelieve-header-v2.png"
+                            alt="Intro Image">
+                    </div>
+                    <div class="news-item">
+                        <div class="news-item-left">
+                            <p>Arcane: Mùa 2 | Trailer Chính Thức</p>
+                            <div class="content-bottom d-flex" style="margin-left: 10px;">
+
+                                <div class="logo-content" style="margin-right: 10px;">
+                                    <img src=" ./img/arcane.png" style="border-radius: 50%;height: 20px; width: 20px;"
+                                        alt="">
+                                </div>
+                                <h5>Arcane</h5>
+                            </div>
+                        </div>
+                        <img src="https://www.riotgames.com/darkroom/500/4fccf878fa5ed54b41c442ec078d4a57:bcc11e31dacf5c68978ce8c61a324985/riot-arc2-social-yt-maintrailer-thumbnail-1920x1080-textless.png"
+                            alt="Arcane Trailer">
+                    </div>
+                    <div class="news-item">
+                        <div class="news-item-left">
+                            <p>Cập Nhật Giá Sắp Tới Tại Các Khu Vực</p>
+                            <div class="content-bottom d-flex" style="margin-left: 10px;">
+
+                                <div class="logo-content" style="margin-right: 10px;">
+                                    <img src=" ./img/val.jpeg" style="border-radius: 50%;height: 20px; width: 20px;"
+                                        alt="">
+                                </div>
+                                <h5>Valorant</h5>
+                            </div>
+                        </div>
+                        <img src="https://www.riotgames.com/darkroom/500/6791cedc43cb912108a6086e4c4f9220:4788dfe4a66f643ddd541b5ff0ec92fe/pricing-article-header-image.png"
+                            alt="New Cards Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Quan -->
+    <div class="container-fluid px-5" style="background-color: #1f1f1f">
+        <div class="container-fluid d-flex justify-content-center align-items-center" style="width: 1780px">
+            <div class="container-fluid">
+                <h2 style="color: #f9f9f9; font-size: 50px">
+                    Games
+                </h2>
+            </div>
+        </div>
+
+        <div class="container-fluid px-4" style="background-color: #1f1f1f">
+            <div class="d-flex justify-content-center">
+                <div class="position-relative pt-5">
+                    <!-- Link đến trang web -->
+                    <a href="https://www.leagueoflegends.com/vi-vn/" target="_blank">
+                        <!-- Ảnh nền -->
+                        <img src="https://www.riotgames.com/darkroom/900/9c0219c494342e38e3c8334ed0c2abf7:0c3ba1940d6151392012ff992408b3f0/lol-2024-kv.png"
+                            alt="LOL" style="border-radius: 10px; height: auto; width: 855px" />
+
+                        <!-- Khung chồng lên ảnh -->
+                        <div class="game_card d-flex flex-column justify-content-between align-items-center position-absolute"
+                            style="
+                  top: 50px;
+                  left: 0px;
+                  width: 325px;
+                  height: 388px;
+                  border-radius: 10px;
+                  padding: 24px 55px;
+                ">
+                            <!-- Logo bên trong khung -->
+                            <div class="game_card_logo">
+                                <img src="https://www.riotgames.com/darkroom/350/a28dfa2308a772466c7d2018a87ac000:0e9fb5e8f3944bcd4375d6960d21962e/lol-logotype.png"
+                                    alt="LOL-text" class="position-relative" style="
+                      width: 180px;
+                      height: auto;
+                      margin: 120px auto;
+                      display: block;
+                    " />
+                            </div>
+                            <div class="game_card_icon d-flex" style="
+                    text-justify: center;
+                    text-align: center;
+                    width: 45px;
+                    height: auto;
+                    background-color: rgba(116, 114, 111, 0.2); /* Màu nền mờ */
+                    border-radius: 10px;
+                  ">
+                                <div class="ps-2 pe-1 align-content-center" style="">
+                                    <i class="fa-brands fa-windows" style="font-size: 12px; color: white"></i>
+                                </div>
+                                <div class="px-1 align-content-center" style="">
+                                    <i class="fa-brands fa-apple" style="font-size: 12px; color: white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="position-relative pt-5 ps-4">
+                    <!-- Link đến trang web -->
+                    <a href="https://playvalorant.com/vi-vn/" target="_blank">
+                        <!-- Ảnh nền -->
+                        <img src="https://www.riotgames.com/darkroom/900/8c6458ea256e6d289b03958347148f49:397ec0bb639f982c5c77a659a9f00e92/val-console-launch.png"
+                            alt="Valorant" style="border-radius: 10px; height: auto; width: 855px" />
+
+                        <!-- Khung chồng lên ảnh -->
+                        <div class="game_card d-flex flex-column justify-content-between align-items-center position-absolute"
+                            style="
+                  top: 50px;
+                  left: 0px;
+                  width: 325px;
+                  height: 388px;
+                  border-radius: 10px;
+                  padding: 24px 55px;
+                ">
+                            <!-- Logo bên trong khung -->
+                            <div class="game_card_logo">
+                                <img src="https://www.riotgames.com/darkroom/350/fc4d867e755e5215833d94e88068b0ab:ead77c56e200894c762889c3cd81a2e1/valorant-logotype.png"
+                                    alt="Valorant-text" class="position-relative" style="
+                      width: 180px;
+                      height: auto;
+                      margin: 97px auto;
+                      display: block;
+                    " />
+                            </div>
+                            <div class="game_card_icon d-flex justify-content-center align-content-center text-center px-1"
+                                style="
+                    text-justify: center;
+                    text-align: center;
+                    width: auto;
+                    height: auto;
+                    background-color: rgba(116, 114, 111, 0.2); /* Màu nền mờ */
+                    border-radius: 10px;
+                  ">
+                                <div class="ps-1 pe-1 align-content-center" style="">
+                                    <i class="fa-brands fa-windows" style="font-size: 12px; color: white"></i>
+                                </div>
+                                <div class="px-1 align-content-center" style="">
+                                    <i class="fa-brands fa-playstation" style="font-size: 12px; color: white"></i>
+                                </div>
+                                <div class="px-1 align-content-center" style="">
+                                    <i class="fa-brands fa-xbox" style="font-size: 12px; color: white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-5" style="background-color: #1f1f1f">
+            <div class="d-flex justify-content-center">
+                <div class="position-relative pt-5">
+                    <!-- Link đến trang web -->
+                    <a href="https://teamfighttactics.leagueoflegends.com/vi-vn/" target="_blank">
+                        <!-- Ảnh nền -->
+                        <img src="https://www.riotgames.com/darkroom/900/07b9bdbbda5ddff26bd4bb3ff4800c9a:1ad41fb470812ad56d07f1cfaed318f2/tft-set-12.png"
+                            alt="TFT" style="border-radius: 10px; height: auto; width: 855px" />
+
+                        <!-- Khung chồng lên ảnh -->
+                        <div class="game_card d-flex flex-column justify-content-between align-items-center position-absolute"
+                            style="
+                  top: 50px;
+                  left: 0px;
+                  width: 325px;
+                  height: 388px;
+                  border-radius: 10px;
+                  padding: 24px 55px;
+                ">
+                            <!-- Logo bên trong khung -->
+                            <div class="game_card_logo">
+                                <img src="https://www.riotgames.com/darkroom/350/2877a75d4539547a238b481e200edd9f:b10a003b28b89d37cc0e446bab19f206/tft-logotype-2021.png"
+                                    alt="TFT-text" class="position-relative" style="
+                      width: 180px;
+                      height: auto;
+                      margin: 101px auto;
+                      display: block;
+                    " />
+                            </div>
+                            <div class="game_card_icon d-flex px-1" style="
+                    text-justify: center;
+                    text-align: center;
+                    width: auto;
+                    height: auto;
+                    background-color: rgba(116, 114, 111, 0.2); /* Màu nền mờ */
+                    border-radius: 10px;
+                  ">
+                                <div class="ps-1 pe-1 py-1" style="font-size: 0px;">
+                                    <i class="fa-brands fa-windows" style="font-size: 12px; color: white"></i>
+                                </div>
+                                <div class="px-1 py-1" style="font-size: 0px;">
+                                    <i class="fa-brands fa-apple" style="font-size: 12px; color: white"></i>
+                                </div>
+                                <div class="px-1 py-1" style="font-size: 0px;">
+                                    <i class="fa-solid fa-mobile" style="font-size: 12px; color: white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="position-relative pt-5 ps-4">
+                    <!-- Link đến trang web -->
+                    <a href="https://wildrift.leagueoflegends.com/vi-vn/" target="_blank">
+                        <!-- Ảnh nền -->
+                        <img src="https://www.riotgames.com/darkroom/900/bdc9d7a312cc33ad8e590136688b6ffb:d9e0299676fa6e6231f0d1a7ad385b7c/wrka-2023.png"
+                            alt="LOL_WR" style="border-radius: 10px; height: auto; width: 855px" />
+
+                        <!-- Khung chồng lên ảnh -->
+                        <div class="game_card d-flex flex-column justify-content-between align-items-center position-absolute"
+                            style="
+                  top: 50px;
+                  left: 0px;
+                  width: 325px;
+                  height: 388px;
+                  border-radius: 10px;
+                  padding: 24px 55px;
+                ">
+                            <!-- Logo bên trong khung -->
+                            <div class="game_card_logo">
+                                <img src="https://www.riotgames.com/darkroom/350/ac2e0c26a8f48cbaf0009eefb028b75f:8cddf84aea3fbcf72d02380c5d050e36/lol-wildrift-logotype.png"
+                                    alt="LOL_WR-text" class="position-relative" style="
+                      width: 180px;
+                      height: auto;
+                      margin: 100.5px auto;
+                      display: block;
+                    " />
+                            </div>
+                            <div class="game_card_icon d-flex px-1" style="
+                    text-justify: center;
+                    text-align: center;
+                    width: auto;
+                    height: auto;
+                    background-color: rgba(116, 114, 111, 0.2); /* Màu nền mờ */
+                    border-radius: 10px;
+                  ">
+                                <div class="px-1 align-content-center" style="">
+                                    <i class="fa-solid fa-mobile" style="font-size: 12px; color: white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-5" style="background-color: #1f1f1f">
+            <div class="d-flex justify-content-center">
+                <div class="position-relative pt-5">
+                    <!-- Link đến trang web -->
+                    <a href="https://playruneterra.com/vi-vn/" target="_blank">
+                        <!-- Ảnh nền -->
+                        <img src="https://www.riotgames.com/darkroom/900/cc40482b270f88d5286842e6546387c1:600b0d57ab97deefee4e0c09294b3461/lor-set-9-product-card.png"
+                            alt="LOR" style="border-radius: 10px; height: auto; width: 855px" />
+
+                        <!-- Khung chồng lên ảnh -->
+                        <div class="game_card d-flex flex-column justify-content-between align-items-center position-absolute"
+                            style="
+                  top: 50px;
+                  left: 0px;
+                  width: 325px;
+                  height: 388px;
+                  border-radius: 10px;
+                  padding: 24px 55px;
+                ">
+                            <!-- Logo bên trong khung -->
+                            <div class="game_card_logo">
+                                <img src="https://www.riotgames.com/darkroom/350/3ae3913f7992eebc555ea77d1e17657b:d7874f08ba1161ac419a8f45dcfa0ae0/legends-of-runeterra-logotype.png"
+                                    alt="LOR-text" class="position-relative" style="
+                      width: 180px;
+                      height: auto;
+                      margin: 128.5px auto;
+                      display: block;
+                    " />
+                            </div>
+                            <div class="game_card_icon d-flex" style="
+                    text-justify: center;
+                    text-align: center;
+                    width: 45px;
+                    height: auto;
+                    background-color: rgba(116, 114, 111, 0.2); /* Màu nền mờ */
+                    border-radius: 10px;
+                  ">
+                                <div class="ps-2 pe-1 align-content-center" style="">
+                                    <i class="fa-brands fa-windows" style="font-size: 12px; color: white"></i>
+                                </div>
+                                <div class="px-1 align-content-center" style="">
+                                    <i class="fa-solid fa-mobile" style="font-size: 12px; color: white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center align-items-center" style="width: 1780px">
+            <div class="container-fluid pt-5">
+                <h2 style="color: #f9f9f9; font-size: 50px">Esports</h2>
+            </div>
+        </div>
+
+        <div class="container-fluid px-4" style="background-color: #1f1f1f">
+            <div class="d-flex justify-content-center">
+                <div class="position-relative pt-5">
+                    <!-- Link đến trang web -->
+                    <a href="https://lolesports.com/vi-VN/" target="_blank">
+                        <!-- Ảnh nền -->
+                        <img src="https://www.riotgames.com/darkroom/855/e4b952c011fbde3c7cf50d303d2b7c4e:32b4f5591dc31f1dd0b822460902faf2/lol-esports-kv-2023.png"
+                            alt="LOL_ES" style="border-radius: 10px; height: auto; width: 855px" />
+
+                        <!-- Khung chồng lên ảnh -->
+                        <div class="game_card d-flex flex-column justify-content-between align-items-center position-absolute"
+                            style="
+                  top: 50px;
+                  left: 0px;
+                  width: 325px;
+                  height: 388px;
+                  border-radius: 10px;
+                  padding: 24px 55px;
+                ">
+                            <!-- Logo bên trong khung -->
+                            <div class="game_card_logo">
+                                <img src="https://www.riotgames.com/darkroom/350/6750aa929c8560a471d302f5c2c87659:9e83958cf6c255d95be5793562e2d644/lol-esports-logo-full.png"
+                                    alt="LOL_ES-text" class="position-relative" style="
+                      width: 180px;
+                      height: auto;
+                      margin: 100px auto;
+                      display: block;
+                    " />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="position-relative pt-5 ps-4">
+                    <!-- Link đến trang web -->
+                    <a href="https://valorantesports.com/vi-VN/" target="_blank">
+                        <!-- Ảnh nền -->
+                        <img src="https://www.riotgames.com/darkroom/855/24ae38d6bcfda35c84ded6c6cd77a44e:19f7b1c2f0237496de84d9eb0fc24bfa/val.png"
+                            alt="Valorant_ES" style="border-radius: 10px; height: auto; width: 855px" />
+
+                        <!-- Khung chồng lên ảnh -->
+                        <div class="game_card d-flex flex-column justify-content-between align-items-center position-absolute"
+                            style="
+                  top: 50px;
+                  left: 0px;
+                  width: 325px;
+                  height: 388px;
+                  border-radius: 10px;
+                  padding: 24px 55px;
+                ">
+                            <!-- Logo bên trong khung -->
+                            <div class="game_card_logo">
+                                <img src="https://www.riotgames.com/darkroom/350/7c2278026780bed9ea25d4d178d5b9fc:9ed1d995f551c56db01a50b8a7aaaf84/vct24-logo-v-full-rgb-white.png"
+                                    alt="Valorant_ES-text" class="position-relative" style="
+                      width: 180px;
+                      height: auto;
+                      margin: 97px auto;
+                      display: block;
+                    " />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center align-items-center" style="width: 1780px">
+            <div class="container-fluid pt-5">
+                <h2 style="color: #f9f9f9; font-size: 50px">Entertainment</h2>
+            </div>
+        </div>
+
+        <div class="container-fluid px-4" style="background-color: #1f1f1f">
+            <div class="d-flex justify-content-center">
+                <div class="position-relative pt-5">
+                    <!-- Link đến trang web -->
+                    <a href="https://www.arcane.com/vi-vn/" target="_blank">
+                        <!-- Ảnh nền -->
+                        <img src="https://www.riotgames.com/darkroom/900/8e43c45318fd4d29006d12f8523ea289:93827ec5120d856e59cd2d09dd35506b/arcane-card.png"
+                            alt="img" style="border-radius: 10px; height: auto; width: 855px" />
+
+                        <!-- Khung chồng lên ảnh -->
+                        <div class="game_card d-flex flex-column justify-content-between align-items-center position-absolute"
+                            style="
+                  top: 50px;
+                  left: 0px;
+                  width: 325px;
+                  height: 388px;
+                  border-radius: 10px;
+                  padding: 24px 55px;
+                ">
+                            <!-- Logo bên trong khung -->
+                            <div class="game_card_logo">
+                                <img src="https://www.riotgames.com/darkroom/350/50b82946b634692d11e20c8cc145029b:16507b949c1253289723d0d0249bc5cd/arcane-logo-white.png"
+                                    alt="img" class="position-relative" style="
+                      width: 180px;
+                      height: auto;
+                      margin: 100px auto;
+                      display: block;
+                    " />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="position-relative pt-5 ps-4">
+                    <!-- Link đến trang web -->
+                    <a href="https://www.youtube.com/c/riotgamesmusic" target="_blank">
+                        <!-- Ảnh nền -->
+                        <img src="https://www.riotgames.com/darkroom/900/c38a2e0e070ba045a40bd4b77bfeeaf1:54b5d22dea4d877540f1860ef6ce3321/riot-music-card.png"
+                            alt="img" style="border-radius: 10px; height: auto; width: 855px" />
+
+                        <!-- Khung chồng lên ảnh -->
+                        <div class="game_card d-flex flex-column justify-content-between align-items-center position-absolute"
+                            style="
+                  top: 50px;
+                  left: 0px;
+                  width: 325px;
+                  height: 388px;
+                  border-radius: 10px;
+                  padding: 24px 55px;
+                ">
+                            <!-- Logo bên trong khung -->
+                            <div class="game_card_logo">
+                                <img src="https://www.riotgames.com/darkroom/350/77dde25ffe4d870deb7b4727f8fa1ec5:2a1221b2c925d6df0be31e4a4f0624d4/riotgames-music.png"
+                                    alt="img" class="position-relative" style="
+                      width: 180px;
+                      height: auto;
+                      margin: 97px auto;
+                      display: block;
+                    " />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- tai -->
+
+
+        <div class="container-fluid  justify-content-center align-items-center" style="width: 1780px">
+            <div class="container-fluid pt-5">
+                <h2 style="color: #f9f9f9; font-size: 50px">Riot Forge</h2>
+            </div>
+
+
+            <!-- carosel -->
+
+
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5 " data-bs-ride="carousel"
+                style="padding-bottom:100px ; ">
+
+
+                <div class="carousel-inner align-items-left justify-content">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <a href="https://www.bandletale.com/en-us/ " target="_blank"><img src="./img/1.png"
+                                class="d-block w-100" alt="..."></a>
+
+
+
+
+                        <div
+                            class="carousel-caption d-none d-md-block text-light  justify-content-center align-items-center">
+                            <img src="./img/l1.png"
+                                style="width: auto; height: 300px; max-width: 100%; margin-left: -1200px; margin-top: -800px;"
+                                alt="">
+
+
+
+                            <div class="icon d-flex align-items-center "
+                                style="margin-bottom: 100px; background-color: #ebebeb25; border-radius: 20px;width: 70px; height: 50px;">
+                                <i class="icon fab fa-windows" style="font-size: 24px; margin: 0 10px;"></i>
+                                <img src="./img/nitendo_logo.png" style="width: auto; height: 20px; margin-top: -1px; "
+                                    alt="Nintendo Logo">
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <a href="https://www.themageseeker.com/en-us/" target="_blank"><img src="./img/2.jpg"
+                                class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block text-light d-flex justify-content-center "
+                            style="width: 190px;">
+                            <img src="./img/l2.png"
+                                style="width: auto; max-height: 100%; max-width: 500px; margin-left: -100px; margin-top: -800px;"
+                                alt="">
+
+                            <div class="icon d-flex align-items-center "
+                                style="margin-bottom: 100px; background-color: #ebebeb25; border-radius: 20px;max-width:fit-content; height: 50px">
+                                <i class="icon fab fa-windows" style="font-size: 24px; margin: 0 10px;"></i>
+                                <img src="./img/nitendo_logo.png"
+                                    style="width: auto; height: 20px; margin-top: -1px; margin-left: 15px;"
+                                    alt="Nintendo Logo">
+                                <i class="fab fa-nintendo-switch" style="font-size: 24px; margin: 0 10px;"></i>
+                                <i class="fab fa-playstation" style="font-size: 24px; margin: 0 10px;"></i>
+                                <i class="fab fa-xbox" style="font-size: 24px; margin: 0 10px;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.ruinedking.com/en-us/" target="_blank"><img src="./img/3.png"
+                                class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block text-light d-flex justify-content-center "
+                            style="width: 190px;">
+                            <img src="./img/l3.png"
+                                style="width: auto; max-height: 100%; max-width: 500px; margin-left: -100px; margin-top: -800px;"
+                                alt="">
+
+                            <div class="icon d-flex align-items-center "
+                                style="margin-bottom: 100px; background-color: #ebebeb25; border-radius: 20px;max-width:fit-content; height: 50px">
+                                <i class="icon fab fa-windows" style="font-size: 24px; margin: 0 10px;"></i>
+                                <img src="./img/nitendo_logo.png"
+                                    style="width: auto; height: 20px; margin-top: -1px; margin-left: 15px;"
+                                    alt="Nintendo Logo">
+                                <i class="fab fa-nintendo-switch" style="font-size: 24px; margin: 0 10px;"></i>
+                                <i class="fab fa-playstation" style="font-size: 24px; margin: 0 10px;"></i>
+                                <i class="fab fa-xbox" style="font-size: 24px; margin: 0 10px;"></i>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.hextechmayhem.com/en-us/" target="_blank"><img src="./img/4.jpg"
+                                class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block text-light d-flex justify-content-center "
+                            style="width: 190px;">
+                            <img src="./img/l4.png"
+                                style="width: auto; max-height: 100%; max-width: 500px; margin-left: -100px; margin-top: -800px;"
+                                alt="">
+
+                            <div class="icon d-flex align-items-center "
+                                style="margin-bottom: 100px; background-color: #ebebeb25; border-radius: 20px;width: 100px; height: 50px">
+                                <i class="icon fab fa-windows" style="font-size: 24px; margin: 0 10px;"></i>
+                                <i class="fa-solid fa-brush"></i>
+                                <img src="./img/nitendo_logo.png"
+                                    style="width: auto; height: 20px; margin-top: -1px; margin-left: 15px;"
+                                    alt="Nintendo Logo">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.convrgencegame.com/" target="_blank"><img src="./img/5.png"
+                                class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block text-light d-flex justify-content-center "
+                            style="width: 190px;">
+                            <img src="./img/l5.png"
+                                style="width: auto; max-height: 100%; max-width: 500px; margin-left: -100px; margin-top: -800px;"
+                                alt="">
+
+                            <div class="icon d-flex align-items-center "
+                                style="margin-bottom: 100px; background-color: #ebebeb25; border-radius: 20px;max-width:fit-content; height: 50px">
+                                <i class="icon fab fa-windows" style="font-size: 24px; margin: 0 10px;"></i>
+                                <img src="./img/nitendo_logo.png"
+                                    style="width: auto; height: 20px; margin-top: -1px; margin-left: 15px;"
+                                    alt="Nintendo Logo">
+                                <i class="fab fa-nintendo-switch" style="font-size: 24px; margin: 0 10px;"></i>
+                                <i class="fab fa-playstation" style="font-size: 24px; margin: 0 10px;"></i>
+                                <i class="fab fa-xbox" style="font-size: 24px; margin: 0 10px;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.songofnunu.com/en-us/" target="_blank"><img src="./img/6.jpg"
+                                class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block text-light d-flex justify-content-center "
+                            style="width: 190px;">
+
+                            <img src="./img/l6.png"
+                                style="width: auto; max-height: 100%; max-width: 500px; margin-left: -100px; margin-top: -800px;"
+                                alt="">
+
+                            <div class="icon d-flex align-items-center "
+                                style="margin-bottom: 100px; background-color: #ebebeb25; border-radius: 20px;max-width:fit-content; height: 50px">
+                                <i class="icon fab fa-windows" style="font-size: 24px; margin: 0 10px;"></i>
+                                <img src="./img/nitendo_logo.png"
+                                    style="width: auto; height: 20px; margin-top: -1px; margin-left: 15px;"
+                                    alt="Nintendo Logo">
+                                <i class="fab fa-nintendo-switch" style="font-size: 24px; margin: 0 10px;"></i>
+                                <i class="fab fa-playstation" style="font-size: 24px; margin: 0 10px;"></i>
+                                <i class="fab fa-xbox" style="font-size: 24px; margin: 0 10px;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- ///////////////////////////////////////////////// above footer -->
+
+    <div class="cotainer-carreer d-flex align-items-center justify-content-center"
+        style="height: 569px;width: 1905; background-color: #EBEBEB; ">
+        <div class="left-section justify-content text-center align-content-center "
+            style="height: auto; margin-left: 500px; padding: 80px 30px; margin: 0px 0px 0px 287px; max-width: 2000px;">
+            <h1>We're hiring!</h1>
+            <p>Team up with Riot to forge your path and craft unforgettable experiences for players</p>
+            <div class="stats text-center align-items-center justify-content-center">
+                <div class="stat text-dark">
+                    <h2 class="fw-bold">120</h2>
+                    <p class="text-dark">Open positions</p>
+                </div>
+                <div class="stat1 text-dark ">
+
+                    <h2 class="fw-bold">25</h2>
+                    <p class="text-dark">Offices</p>
+                </div>
+            </div>
+            <a href="#" class="btn">Explore Careers</a>
+            
+    
+
+        </div>
+        <div>
+            <img class="gau" src="./img/annie.png" style="width: auto;height: 569px; " alt="Game Character Statue">
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="fix-center" >
+            <div class="footer-content">
+                <div class="img-hover d-flex ">
+                    <img src="./img/white.png" alt="White" style="width: 85px; height: auto"
+                        onmouseover="this.src='./img/red.png';" onmouseout="this.src='./img/white.png';">
+                </div>
+                <div class="footer-links " style=" margin-top: 20px">
+                    <a class="px-1" href="https://www.riotgames.com/vi/press">Press</a>
+                    <a class="px-1" href="https://www.riotgames.com/vi/security">Securityt</a>
+                    <a class="px-1" class="px-5" href="https://www.riotgames.com/vi/legal">Legal</a>
+                    <a class="px-1" href="https://www.riotgames.com/en/who-we-are/riot-games-leadership">Leadership</a>
+                    <a class="px-1" href="https://www.riotgames.com/en/candidate-privacy">Candidate Privacy</a>
+                    <a class="px-1" href="https://www.riotgames.com/en/candidate-privacy">Terms of Service</a>
+                    <a class="px-1" href="https://www.riotgames.com/en/privacy-notice">Privacy Notice</a>
+    
+                    <a href="https://support.riotgames.com/hc/en-us">Player Support</a>
+                    <a href="https://www.riotgames.com/en/e-verify-right-to-work">E-Verify</a>
+                    <a href="https://www.riotgames.com/vi/accessibility">Accessibility</a>
+                    <a href="https://www.riotgames.com/en/annual-reports">Annual Reports</a>
+                    
+                </div>
+                <div class="social-icons " style="margin-top: -20px; margin-right: 80px;">
+                    <a href="https://x.com/riotgames"><i class="fa-brands fa-x-twitter"
+                            style="font-size: 20px; color: white"></i></a>
+                    <a href="https://www.instagram.com/riotgames/"><i class="fab fa-instagram"
+                            style="font-size: 20px; color: white"></i></a>
+                    <a href="https://www.tiktok.com/@riotgames"><i class="fab fa-tiktok"
+                            style="font-size: 20px; color: white"></i></a>
+                    <a href="https://www.linkedin.com/company/riot-games"><i class="fab fa-linkedin-in"
+                            style="font-size: 20px; color: white"></i></a>
+                    <a href="https://www.facebook.com/RiotGames/"><i class="fab fa-facebook-f"
+                            style="font-size: 20px; color: white"></i></a>
+                    <a href="https://www.youtube.com/riotgames"><i class="fab fa-youtube"
+                            style="font-size: 20px; color: white"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom ">
+    
+                <div class="d-flex justify-content-center align-content-center text-center align-items-center">
+<a href="#" class="cookie-settings  fs-6">Cookie Preferences</a>
+                    <div class="mx-3" style="font-size: smaller;"> | © 2024 Riot Games, Inc. All Rights Reserved.
+                    </div>
+                </div>
+    
+                <a href="#" class="back" style="margin-right: 75px;">To the Surface ▲</a>
+    
+    
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

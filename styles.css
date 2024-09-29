@@ -1,0 +1,677 @@
+::selection {
+    background-color: #d32f2f; /* Màu nền khi bôi đen */
+    color: #ffffff; /* Màu chữ khi bôi đen */
+}
+
+:root {
+    --color-bg-gradient: rgba(186, 137, 100, 0.2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+
+
+
+.background-sth {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+    /* Ẩn phần dư thừa của video */
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Giúp video co giãn vừa khung và giữ nguyên tỷ lệ */
+    object-position: center;
+}
+
+
+
+.container-inner {
+    text-align: center;
+    /* Đảm bảo nội dung bên trong canh giữa */
+    max-width: 100%;
+    width: auto;
+}
+
+.content {
+    position: absolute;
+    /* Đảm bảo nội dung không ảnh hưởng bởi zoom */
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    /* Canh giữa nội dung */
+
+
+}
+
+
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+
+}
+
+
+
+
+
+
+/* Mở rộng lên header để chứa video */
+.bg-header {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    z-index: 1000;
+    padding: 15px 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.bg-header.scrolled {
+    background-color: rgba(0, 0, 0, 0.644);
+    /* Nền đen mờ khi cuộn */
+}
+
+
+
+
+/* Khoảng cách phần nội dung để khi cuộn không đè lên header */
+.content {
+    padding-top: 100vh;
+}
+
+.img-hover {
+    src: url('./img/white.png');
+    width: 200px;
+    height: auto;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.img-hover img {
+    z-index: 1001;
+
+    position: relative;
+
+}
+
+.img-hover:hover {
+    src: url('./img/red.png');
+}
+
+.ca-hover {
+    cursor: pointer;
+    z-index: 1001;
+    /* Đảm bảo caret cũng có thể tương tác */
+}
+
+.custom-i {
+    color: rgb(161, 161, 161);
+}
+
+.img-hover img:hover+.ca-hover {
+
+    color: #d1363a;
+    /* Chuyển màu caret xuống đỏ khi hover qua ảnh */
+}
+
+/* Tùy chọn thêm cho select */
+.form-select {
+    cursor: pointer;
+}
+
+
+.content {
+
+    z-index: 800;
+}
+
+
+
+
+
+
+
+
+#languageSelect {
+    position: absolute;
+    top: 60px;
+    /* Điều chỉnh vị trí thấp hơn quả cầu */
+    left: -60px;
+    display: none;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+
+.dropdown {
+    position: relative;
+    /* Đặt vị trí tương đối để dropdown-content được định vị chính xác */
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.dropdown-content {
+    display: none;
+    /* Ẩn dropdown-content mặc định */
+    position: absolute;
+    /* Đặt vị trí tuyệt đối */
+    background-color: #2b2727;
+    top: 22px;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    /* Đảm bảo dropdown nằm trên các phần tử khác */
+    z-index: 1003;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Hiện dropdown-content khi hover */
+}
+
+
+.dropdown:hover::after {
+    content: '';
+    /* Tạo pseudo-element */
+    position: absolute;
+    /* Đặt vị trí tương đối */
+    left: 0;
+    /* Canh trái */
+    bottom: -4px;
+    /* Khoảng cách với chữ */
+    height: 5px;
+    /* Độ dày đường gạch chân */
+    width: 160px;
+    /* Chiều rộng bằng thẻ p */
+    background-color: rgba(255, 0, 0, 0.861);
+    /* Màu đường gạch chân */
+    z-index: 1002;
+    /* Đặt sau chữ */
+
+    border-radius: 10px;
+}
+
+.custom-head {
+    font-size: small;
+}
+
+
+.custom-text {
+
+    font-size: small;
+    font-weight: normal;
+    color: #ffffff69;
+
+
+}
+
+
+.dropdown-content p {
+    margin: 8px 0;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown-content p:hover {
+    background-color: rgba(178, 176, 176, 0.722)
+        /* Hiệu ứng hover cho item */
+}
+
+
+.hihi span {
+    position: relative;
+    display: inline-block;
+    /* Đảm bảo span chỉ chiếm khoảng cách cần thiết */
+}
+
+.hihi span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    /* Khoảng cách giữa chữ và đường gạch chân */
+    height: 4px;
+    /* Độ dày của đường gạch chân */
+    width: 0;
+    /* Ban đầu không hiển thị gạch chân */
+    background-color: rgba(255, 0, 0, 0.861);
+    /* Màu gạch chân */
+    border-radius: 10px;
+
+}
+
+.hihi:hover span::after {
+    width: 100%;
+    /* Gạch chân sẽ xuất hiện khi hover */
+}
+
+
+
+
+
+
+
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(79, 162, 229);
+    border-radius: 30px;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 279px;
+    height: 72px;
+}
+
+.button:hover {
+    background-color: rgb(93, 173, 238);
+    /* màu khi hover */
+}
+
+.button .icon {
+    background-color: black;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 24px;
+    /* Đặt kích thước font icon */
+}
+
+
+
+
+
+
+
+
+
+/* .background-sth {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+ 
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+/* .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */
+
+/* .video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+
+
+/* thien */
+
+
+.wrapper {
+
+    width: 1730px;
+    height: 860px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px;
+    background: radial-gradient(70.71% 70.71% at 50% 50%, var(--color-bg-gradient) 0, rgba(10, 10, 10, 0) 75%, rgba(10, 10, 10, 0) 100%);
+    color: #fff;
+}
+
+
+/* Phần còn lại của CSS */
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.news-header h2 {
+    font-size: 50px;
+}
+
+.view-all-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, .2);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-all-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+
+.boder-img {
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.boder-img img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.boder-img img:hover {
+    transform: scale(1.05);
+}
+
+
+.news-title {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.news-title h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+/* Right Section (Sidebar) */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(128, 128, 128, .2);
+    border-radius: 8px;
+    height: 150px;
+    justify-content: space-between;
+    transition: transform 0.5s ease;
+}
+
+
+.news-item:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.news-item img {
+    width: 236px;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.news-item p {
+    font-size: larger;
+    font-weight: bold;
+    padding: 0 16px;
+}
+
+
+/* tai */
+
+
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+   
+}
+.fix-center{
+
+    flex-direction: column; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    text-align: center; /* Căn giữa nội dung văn bản */
+    max-width: 1780px; /* Giới hạn chiều rộng */
+    margin: 0 auto; /* Căn giữa khối trong footer */
+}
+.footer-content {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.logot img {
+    max-width: 50px;
+    margin-left: -130px;
+    color: #111;
+    ;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px; 
+    /* Để tạo khoảng trống cho các liên kết khác */
+    justify-content: left;
+    padding-left: 0px;
+    /* Canh giữa các mục liên kết */
+    transform: translateY(-10px);
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 8px;
+    font-weight: 700;
+
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.new-line {
+    flex-basis: 100%;
+    /* Đẩy xuống dòng mới */
+    text-align: left;
+    /* Căn sang trái */
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-right: -100px;
+    margin-bottom: 15px;
+
+}
+
+.social-icons img {
+    width: 20px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    margin-left: -650px;
+}
+
+.back-to-top {
+    font-size: 14px;
+}
+
+.back-to-top:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* above-footer */
+
+
+
+
+
+.stats {
+    display: flex;
+    margin: 20px 0;
+}
+
+.stat {
+    background-color: #c5bebeb2;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 10px;
+}
+
+.stat h2 {
+    margin: 0;
+}
+
+.stat p {
+    margin: 0;
+}
+
+.stat1 {
+    background-color: #c5bebeb2;
+    padding: 20px;
+    width: 162px;
+    height: 105px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* You can adjust the width as needed */
+}
+
+.stat1 h2 {
+    margin: 0;
+    /* Ensure there's no extra margin */
+}
+
+.stat1 p {
+    margin: 0;
+    /* Ensure there's no extra margin */
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+
+
+
+
+/* phan con lai */
+
+
+
+
+
+/* TAI */
+
+
+.carousel-inner h5 {
+
+    color: white;
+}
