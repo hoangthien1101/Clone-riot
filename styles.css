@@ -14,10 +14,6 @@
     border: none;
 }
 
-.resize img{
-    max-width: 100%;
-    height: auto;
-}
 
 
 
@@ -363,8 +359,7 @@
 
 
 .wrapper {
-
-    width: 1730px;
+   
     height: 860px;
     display: flex;
     flex-direction: column;
@@ -372,6 +367,7 @@
     padding: 80px;
     background: radial-gradient(70.71% 70.71% at 50% 50%, var(--color-bg-gradient) 0, rgba(10, 10, 10, 0) 75%, rgba(10, 10, 10, 0) 100%);
     color: #fff;
+    margin-bottom: 30px;
 }
 
 
