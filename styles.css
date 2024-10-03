@@ -15,6 +15,66 @@
 }
 
 
+.container-fluid {
+    max-width: 100%; /* Đảm bảo container không tràn ra ngoài */
+    padding: 0 15px; /* Thêm khoảng cách hai bên để tránh tràn */
+}
+
+.container-fluid img {
+    width: 100%;
+    max-width: 700px; /* Giới hạn kích thước ảnh nền */
+    height: auto;
+}
+
+.game_card {
+    width: 300px; /* Thu nhỏ kích thước của khung chồng */
+    height: 350px; /* Thu nhỏ chiều cao của khung */
+    padding: 20px 45px;
+    position: relative; /* Đảm bảo các phần tử bên trong định vị chính xác */
+    overflow: hidden; /* Đảm bảo không có phần tử nào bị tràn ra ngoài khung */
+}
+
+.game_card_logo img {
+    width: 160px; /* Điều chỉnh kích thước logo */
+    margin: 100px auto;
+    display: block;
+    position: relative; /* Đảm bảo logo được giữ trong khung */
+    z-index: 1; /* Giữ logo trong khung và tránh tràn ra ngoài */
+}
+
+.game_card_icon {
+    width: auto;
+    padding: 5px;
+    position: absolute; /* Đặt icon chính xác trong khung */
+    bottom: 20px; /* Căn icon ở đáy khung */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); /* Đảm bảo icon nằm giữa khung */
+    z-index: 2; /* Giữ icon trong khung và tránh tràn ra ngoài */
+    background-color: rgba(116, 114, 111, 0.2); /* Nền mờ */
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container-fluid img {
+        max-width: 100%; /* Đảm bảo hình ảnh nền thu nhỏ trên màn hình nhỏ */
+    }
+
+    .game_card {
+        width: 250px; /* Điều chỉnh kích thước khung trên màn hình nhỏ */
+        height: 300px;
+        padding: 15px 30px;
+    }
+
+    .game_card_logo img {
+        width: 130px; /* Thu nhỏ logo trên màn hình nhỏ */
+        margin: 80px auto;
+    }
+
+    .game_card_icon {
+        bottom: 15px; /* Điều chỉnh vị trí icon khi màn hình nhỏ */
+    }
+}
+
 
 
 
