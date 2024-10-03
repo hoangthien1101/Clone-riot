@@ -16,6 +16,9 @@
 
 
 
+
+
+
 .background-sth {
     position: relative;
 
@@ -324,33 +327,17 @@
 
 
 
-
-
-/* .background-sth {
-    position: relative;
-
-    width: 100%;
-
-    overflow: hidden;
- 
-    background-color: rgba(0, 0, 0, 0.301);
+/* CSS để bỏ màu xanh và gạch chân */
+a.remove-color {
+    color: inherit; /* Giữ nguyên màu chữ theo bố cục xung quanh */
+    text-decoration: none; /* Bỏ gạch chân */
 }
 
-/* .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-} */
+a.remove-color:hover {
+    color: inherit; /* Giữ nguyên màu khi hover */
+    text-decoration: none; /* Không gạch chân khi hover */
+}
 
-/* .video-background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-} */
 
 
 /* thien */
